@@ -205,6 +205,11 @@ button:focus {
   width: 100%;
 }
 
+/* Add styles for active nav link */
+.navbar-nav .nav-item a.active::after {
+  width: 100%;
+}
+
 /* --------- */
 /* Home section */
 /* --------- */

@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -13,7 +13,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { MdWork } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -38,7 +38,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand as={Link} to="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -54,42 +54,66 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <NavLink
+                to="/"
+                onClick={() => updateExpanded(false)}
+                className={({ isActive }) => 
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className={({ isActive }) => 
+                  isActive ? "nav-link active" : "nav-link"
+                }
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+                className={({ isActive }) => 
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                <MdWork style={{ marginBottom: "2px" }} /> Experience
+              </NavLink>
+            </Nav.Item>
+
+            <Nav.Item>
+              <NavLink
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className={({ isActive }) => 
+                  isActive ? "nav-link active" : "nav-link"
+                }
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className={({ isActive }) => 
+                  isActive ? "nav-link active" : "nav-link"
+                }
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
@@ -102,7 +126,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Dushyantm/Portfolio"
                 target="_blank"
@@ -111,7 +135,7 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
