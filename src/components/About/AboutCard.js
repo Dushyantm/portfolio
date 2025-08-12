@@ -12,12 +12,13 @@ function AboutCard() {
             from <span className="purple"> Boston, MA.</span>
             <br />
             <br />
-            A passionate Data Scientist 🚀 with experience collaborating closely with software engineers and fellow data scientists to develop and deploy cutting-edge AI techniques.
+            A passionate Computer Engineer 🚀 with experience collaborating closely with software engineers and fellow data scientists to develop and deploy cutting-edge AI techniques.
             <br />
-            Currently, I am pursuing my Master's in Information Systems from <span className="purple">Northeastern University, Boston</span>.
-            {/* <br />
-            I have an undergraduate degree in Computer Science and Engineering from <span className="purple">Mumbai University, India</span>.
-            <br /> */}
+            <br />
+            I bring a strong foundation in Gen AI with hands-on experience in building LLM applications, fine tuning LLMs, building RAG pipelines at scale and evaluating LLM models.
+            <br />
+            <br />
+            My passion for continuous growth fuels my motivation to embrace new challenges and innovative ideas.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

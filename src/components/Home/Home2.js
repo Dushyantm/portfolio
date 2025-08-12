@@ -21,8 +21,6 @@ function Home2() {
               <p className="home-about-body">
                 I fell in love with programming and have been exploring the fascinating world of AI and Machine Learning ever since.
                 <br />
-                <br />I'm currently pursuing a Master's degree in Information Systems at Northeastern University, focusing on leveraging AI to solve real-world challenges.
-                <br />
                 <br />I am proficient in technologies like
                 <i>
                   <b className="purple"> Python, PyTorch, Numpy, Pandas, ReactJS, NodeJS, Docker, and AWS. </b>

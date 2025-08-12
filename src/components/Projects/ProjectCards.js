@@ -45,6 +45,13 @@ function ProjectCards(props) {
             {"Paper Link"}
           </Button>
         )}
+        {/* Blog Button */}
+        {props.blogLink && (
+          <Button variant="primary" href={props.blogLink} target="_blank">
+            <CgWebsite /> &nbsp;
+            {"Blog"}
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );

@@ -6,6 +6,19 @@ import "./Experience.css";
 
 function Experience() {
   const experiences = [
+  {
+      title: "AI Engineer",
+      company: "OptiMe Health",
+      duration: "Apr 2025 - Present",
+      location: "Boston, Massachusetts, United States",
+      type: "Full-time",
+      responsibilities: [
+        "Created an educational chatbot with personalized guidance, improving user engagement.",
+        "Built RESTful APIs for LLM integration on AWS, leveraging Flask and Redis for scalable, event-driven architecture",
+        "Deployed serverless AWS Lambda microservices for AI-driven document enhancement, optimizing user-specific workflows",
+        "Integrated secure backend endpoints in Node.js to handle Stripe based subscription workflows via webhooks, integrating rate limiting for AI services and enforcing access controls to ensure compliant billing and usage"
+      ]
+    },
     {
       title: "Research Assistant",
       company: "Institute for Experiential AI at Northeastern University",

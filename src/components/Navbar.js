@@ -13,7 +13,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { MdWork } from "react-icons/md";
+import { MdWorkOutline } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -85,7 +85,7 @@ function NavBar() {
                   isActive ? "nav-link active" : "nav-link"
                 }
               >
-                <MdWork style={{ marginBottom: "2px" }} /> Experience
+                <MdWorkOutline style={{ marginBottom: "2px" }} /> Experience
               </NavLink>
             </Nav.Item>
 

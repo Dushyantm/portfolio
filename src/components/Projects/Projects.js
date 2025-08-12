@@ -60,6 +60,24 @@ function Projects() {
             />
           </Col>
         </Row>
+        {/*Fourth Project
+        Optimized Fine-Tuning of LLMs on Apple Silicon (MLX + LoRA) | Link
+        • Fine-tuned the Ministral-8B-Instruct model on a medical symptoms and diagnosis dataset, reducing test perplexity from 2.01 to
+        1.42 and boosting response accuracy by 60% versus the baseline model
+        • Implemented LoRA and QLoRA (4-bit quantization) on MLX, achieving 65% lower memory usage during training, and 2x faster
+        inference speeds on Apple silicon*/}
+        <Col md={4} className="project-card">
+          <ProjectCard
+            isBlog={false}
+            title="Optimized Fine-Tuning of LLMs on Apple Silicon (MLX + LoRA)"
+            description={[
+              "Fine-tuned the Ministral-8B-Instruct model on a medical symptoms and diagnosis dataset, reducing test perplexity from 2.01 to 1.42 and boosting response accuracy by 60% versus the baseline model",
+              "Implemented LoRA and QLoRA (4-bit quantization) on MLX, achieving 65% lower memory usage during training, and 2x faster inference speeds on Apple silicon"
+            ]}
+            blogLink="https://medium.com/@dummahajan/train-your-own-llm-on-macbook-a-15-minute-guide-with-mlx-6c6ed9ad036a"
+          />
+        </Col>
+        
       </Container>
     </Container>
   );
