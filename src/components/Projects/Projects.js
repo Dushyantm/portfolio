@@ -3,7 +3,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
 
 function Projects() {
   return (
@@ -47,7 +46,6 @@ function Projects() {
           {/* Third Project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
               isBlog={false}
               title="Reducing EHR Chart Burden with a Simple, Scalable, Clinician-Driven AI Approach"
               description={[
